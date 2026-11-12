@@ -22003,8 +22003,8 @@ function enHeader(doc, cfg, ver, withAns, total) {
         '</div>' +
 
         '<div class="mx-card"><h3>2. Thông tin trang đầu của đề thi</h3><div class="mx-grid one">' +
-        '<div class="mx-f"><label>Sở giáo dục</label><input type="text" id="mx-sgd" placeholder="VD: SỞ GD – ĐT TP.Hồ Chí Minh" oninput="CODE93Mix.onCfg()"></div>' +
-        '<div class="mx-f"><label>Tên trường</label><input type="text" id="mx-school" placeholder="VD: THPT Minh Đức" oninput="CODE93Mix.onCfg()"></div>' +
+        '<div class="mx-f"><label>Sở giáo dục</label><input type="text" id="mx-sgd" placeholder="VD: SỞ GD – ĐT QUẢNG TRỊ" oninput="CODE93Mix.onCfg()"></div>' +
+        '<div class="mx-f"><label>Tên trường</label><input type="text" id="mx-school" placeholder="VD: THPT NGUYỄN CHÍ THANH" oninput="CODE93Mix.onCfg()"></div>' +
         '<div class="mx-f"><label>Tên kì thi</label><input type="text" id="mx-exam" placeholder="VD: KIỂM TRA GIỮA KÌ I" oninput="CODE93Mix.onCfg()"></div>' +
         '<div class="mx-f"><label>Môn thi</label><input type="text" id="mx-subject" list="mx-subj-list" placeholder="VD: Hóa học" oninput="CODE93Mix.onSubject()"><datalist id="mx-subj-list">' +
         SUBJECTS.map(function (s) { return '<option value="' + esc(s) + '">'; }).join('') + '</datalist></div>' +
@@ -24420,7 +24420,7 @@ try { if (!isStu() && !localStorage.getItem(LSK0 + '_c137')) { st.lessons = {}; 
         '<div class="xw-head"><div style="display:flex;align-items:center;min-width:0"><h2>📄 Xuất file Word từ Ngân hàng đề</h2><span class="xw-tag">Theo bài • Theo chương • Cả khối</span></div>' +
         '<button type="button" class="xw-x" onclick="CODE162.close()">✕ Đóng</button></div>' +
         '<details id="xw-info" class="xw-info" open><summary>Thông tin trang đầu của đề thi</summary><div class="xw-grid">' +
-        inp('xw-sgd', 'Sở giáo dục', 'VD: SỞ GD – ĐT TP.Hồ Chí Minh) + inp('xw-school', 'Tên trường', 'VD: THPT Minh ĐứcH') + inp('xw-exam', 'Tên kì thi', 'VD: KIỂM TRA GIỮA KÌ I') +
+        inp('xw-sgd', 'Sở giáo dục', 'VD: SỞ GD – ĐT QUẢNG TRỊ') + inp('xw-school', 'Tên trường', 'VD: THPT NGUYỄN CHÍ THANH') + inp('xw-exam', 'Tên kì thi', 'VD: KIỂM TRA GIỮA KÌ I') +
         inp('xw-subject-t', 'Môn thi', 'VD: Hóa học', 'oninput="CODE162.onInfo(\'subject\')"') + inp('xw-grade-t', 'Lớp', 'VD: 12', 'oninput="CODE162.onInfo(\'grade\')"') +
         inp('xw-year', 'Năm học', 'VD: 2026 – 2027') + inp('xw-time', 'Thời gian làm bài (phút)', 'VD: 50') +
         '</div></details>' +
